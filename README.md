@@ -11,7 +11,7 @@ Here is a photo of what the github page looks like before interacting:
 https://imgur.com/a/0QAwR7d
 
 This is a photo after clicking on some of the flags:
-
+https://imgur.com/BTQJxdr
 
 Github Pages Link:
 https://luke-gebler.github.io/01-ghd3/
