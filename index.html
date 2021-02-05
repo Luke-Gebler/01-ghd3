@@ -84,13 +84,22 @@
   //Israel
   svg.append("polygon")
     .attr("points", points1)
+    .on("click", function(){
+      console.log("Israel")
+    })
 
   svg.append("polygon")
     .attr("points", points2)
+    .on("click", function(){
+      console.log("Israel")
+    })
 
   svg.append("rect")
     .attr("width", w/2)
     .attr("height", h/2)
+    .on("click", function(){
+      console.log("Israel")
+    })
 
   svg.append("rect")
     .attr("width", w/2)
@@ -98,6 +107,9 @@
     .attr("y", 20)
     .style("fill", "darkblue")
     .style("stroke-width", 0)
+    .on("click", function(){
+      console.log("Israel")
+    })
 
   svg.append("rect")
     .attr("width", w/2)
@@ -127,8 +139,10 @@
     .attr("r", 50)
     .style("fill", "red")
     .style("stroke", "red")
+    .on("click", function(){
+      console.log("Japan")
+    })
     
-
   //Sweeden
   svg.append("rect")
     .attr("x", w/2)
@@ -145,12 +159,18 @@
     .attr("x2", w - 2)
     .attr("y1", h/4)
     .attr("y2", h/4)
+    .on("click", function(){
+      console.log("Sweeden")
+    })
 
   svg.append("line")
     .attr("x1", w/2 + 160)
     .attr("x2", w/2 + 160)
     .attr("y1", 2)
     .attr("y2", h/2 - 2)
+    .on("click", function(){
+      console.log("Sweeden")
+    })
 
   //Turkey
   svg.append("rect")
@@ -169,6 +189,9 @@
     .attr("r", 50)
     .style("fill", "white")
     .style("stroke", "white")
+    .on("click", function(){
+      console.log("Turkey")
+    })
 
   svg.append("circle")
     .attr("cx", w/4 - 60)
@@ -176,10 +199,16 @@
     .attr("r", 35)
     .style("fill", "red")
     .style("stroke", "red")
+    .on("click", function(){
+      console.log("Turkey")
+    })
 
   svg.append("polygon")
     .attr("points", starPoints)
     .style("fill", "white")
     .style("stroke-width", 0)
+    .on("click", function(){
+      console.log("Turkey")
+    })
 
 </script>
