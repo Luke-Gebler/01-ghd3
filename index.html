@@ -29,6 +29,11 @@
     stroke: darkblue;
     stroke-width: 6px;
   }
+
+  symbol {
+    fill: none
+  }
+
 </style>
 
 <script>
@@ -52,7 +57,7 @@
     [w/3 - 35, h/6 + 20]
   ]
 
-  var star = d3.symbol().type(d3.symbolStar).size(25);
+  var star = d3.symbol().type(d3.symbolStar).size(100);
 
   var svg = d3.select("body").append("svg")
     .attr("width", w)
@@ -111,7 +116,7 @@
     .attr("y", 0)
     .attr("width", w/2)
     .attr("height", h/2)
-    .style("fill", "aqua")
+    .style("fill", "steelblue")
     
   svg.append("line")
     .attr("x1", w/2 + 2)
@@ -134,20 +139,20 @@
     .style("fill", "red")
 
   svg.append("circle")
-    .attr("cx", w/4)
+    .attr("cx", w/4 - 100)
     .attr("cy", h/2 + h/4)
     .attr("r", 50)
     .style("fill", "white")
     .style("stroke", "white")
 
   svg.append("circle")
-    .attr("cx", w/4 + 25)
+    .attr("cx", w/4 - 70)
     .attr("cy", h/2 + h/4)
-    .attr("r", 25)
+    .attr("r", 50)
     .style("fill", "red")
     .style("stroke", "red")
 
-  svg.append("star")
+  svg.append("symbol")
     .attr("d", star)
     .attr("fill", "purple")
 
