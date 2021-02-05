@@ -22,9 +22,13 @@
     x = w / z,
     y = h / z;
 
-var svg = d3.select("body").append("svg")
+  var svg = d3.select("body").append("svg")
     .attr("width", w)
     .attr("height", h);
+
+  svg.append("rect")
+    .attr("width", w)
+    .attr("height", h)
 
   // Add an SVG
   // Add Rectangles
