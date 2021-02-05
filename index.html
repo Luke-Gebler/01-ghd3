@@ -39,7 +39,8 @@
 <script>
   console.log(d3); // test if d3 is loaded
 
-  var angle = 0;
+  var colors = ["aquamarine", "sandybrown", "hotpink", "red"];
+  var iterator = -1;
 
   var w = 960,
     h = 500,
@@ -190,6 +191,10 @@
     .attr("height", h/2)
     .style("fill", "red")
     .on("click", function(){
+      d3.select(this).style("fill", function() {
+        iterator += 1;
+        return colors[iterator]
+      });
       console.log("Turkey");
     })
 
@@ -218,8 +223,6 @@
     .style("fill", "white")
     .style("stroke-width", 0)
     .on("click", function(){
-      angle += 45;
-      d3.select(this).style("transform", "rotate(30)");
       console.log("Turkey");
     })
 
