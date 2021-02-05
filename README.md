@@ -18,5 +18,5 @@ In terms of design, I believe the recreation of flags covers this as oppose to r
 For technical achievement, try clicking on each flag, the console will log the name of the flags country as well as some change will be made.
     -Japan: circle will change color
     -Sweeden: flag will invert
-    -Turkey: star flashes colors
+    -Turkey: star rotates
     -Israel: 
