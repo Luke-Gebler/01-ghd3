@@ -109,19 +109,19 @@
     .attr("y", 0)
     .attr("width", w/2)
     .attr("height", h/2)
-    .attr("fill", "lightblue")
+    .style("fill", "lightblue")
     
   svg.append("line")
-    .attr("x1", w/2)
-    .attr("x2", w)
+    .attr("x1", w/2 + 2)
+    .attr("x2", w - 2)
     .attr("y1", h/4)
     .attr("y2", h/4)
 
   svg.append("line")
     .attr("x1", w/2 + 160)
     .attr("x2", w/2 + 160)
-    .attr("y1", 0)
-    .attr("y2", h/2)
+    .attr("y1", 2)
+    .attr("y2", h/2 - 2)
 
   // Add an SVG
   // Add Rectangles
