@@ -87,14 +87,14 @@
   svg.append("polygon")
     .attr("points", points1)
     .on("click", function(){
-      d3.select(this).style("visiblitiy", "hidden");
+      d3.select(this).style("opacity", 0);
       console.log("Israel")
     })
 
   svg.append("polygon")
     .attr("points", points2)
     .on("click", function(){
-      d3.select(this).style("visiblitiy", "hidden");
+      d3.select(this).style("opacity", 0);
       console.log("Israel")
     })
 
@@ -102,7 +102,7 @@
     .attr("width", w/2)
     .attr("height", h/2)
     .on("click", function(){
-      d3.select(this).style("visiblitiy", "hidden");
+      d3.select(this).style("opacity", 0);
       console.log("Israel")
     })
 
@@ -113,7 +113,7 @@
     .style("fill", "darkblue")
     .style("stroke-width", 0)
     .on("click", function(){
-      d3.select(this).style("visiblitiy", "hidden");
+      d3.select(this).style("opacity", 0);
       console.log("Israel")
     })
 
@@ -124,7 +124,7 @@
     .style("fill", "darkblue")
     .style("stroke-width", 0)
     .on("click", function(){
-      d3.select(this).style("visiblitiy", "hidden");
+      d3.select(this).style("opacity", 0);
       console.log("Israel")
     })
 
@@ -147,7 +147,7 @@
     .style("fill", "red")
     .style("stroke", "red")
     .on("click", function(){
-      d3.select(this).style("fill", "magenta");
+      d3.select(this).style("fill", "magenta").style("stroke", "magenta");
       console.log("Japan");
     })
     
@@ -219,7 +219,7 @@
     .style("stroke-width", 0)
     .on("click", function(){
       angle += 45;
-      d3.select(this).style("transform", "rotate(" + angle + ")");
+      d3.select(this).style("transform", "rotate(30)");
       console.log("Turkey");
     })
 

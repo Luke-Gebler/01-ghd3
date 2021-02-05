@@ -19,4 +19,4 @@ For technical achievement, try clicking on each flag, the console will log the n
     -Japan: circle will change color
     -Sweeden: flag will invert
     -Turkey: star rotates
-    -Israel: 
+    -Israel: each shape disappears if you click it
