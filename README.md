@@ -5,6 +5,7 @@ Data Vis
 Design Process:
 After getting used to how to add shapes through d3, I decided to start trying to make some flags.
 I started out easy by creating the japanese flag and progressively tried harder flags (Israel and Turkey).
+All the desired shapes (rect, circle, line, polygon) have been used in multiple ways.
 
 Here is a photo of what the github page looks like:
 ![Alt text](https://imgur.com/a/0QAwR7d)
