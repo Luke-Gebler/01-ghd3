@@ -7,8 +7,11 @@ After getting used to how to add shapes through d3, I decided to start trying to
 I started out easy by creating the japanese flag and progressively tried harder flags (Israel and Turkey).
 All the desired shapes (rect, circle, line, polygon) have been used in multiple ways.
 
-Here is a photo of what the github page looks like:
-![Alt text](https://imgur.com/a/0QAwR7d)
+Here is a photo of what the github page looks like before interacting:
+https://imgur.com/a/0QAwR7d
+
+This is a photo after clicking on some of the flags:
+
 
 Github Pages Link:
 https://luke-gebler.github.io/01-ghd3/
@@ -18,5 +21,5 @@ In terms of design, I believe the recreation of flags covers this as oppose to r
 For technical achievement, try clicking on each flag, the console will log the name of the flags country as well as some change will be made.
     -Japan: circle will change color
     -Sweeden: flag will invert
-    -Turkey: star rotates
+    -Turkey: star changes to multiple colors
     -Israel: each shape disappears if you click it
