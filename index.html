@@ -191,10 +191,6 @@
     .attr("height", h/2)
     .style("fill", "red")
     .on("click", function(){
-      d3.select(this).style("fill", function() {
-        iterator += 1;
-        return colors[iterator]
-      });
       console.log("Turkey");
     })
 
@@ -223,6 +219,13 @@
     .style("fill", "white")
     .style("stroke-width", 0)
     .on("click", function(){
+      d3.select(this).style("fill", function() {
+        iterator += 1;
+        if(iterator >= 4) {
+          iterator = 0;
+        }
+        return colors[iterator]
+      });
       console.log("Turkey");
     })
 
