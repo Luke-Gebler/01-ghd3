@@ -59,15 +59,15 @@
 
   var starPoints = [
     [w/4, h/2 + h/4 - 20],
-    [w/4 - 5, h/2 + h/4 - 5],
-    [w/4 - 25, h/2 + h/4 - 5],
-    [w/4 - 10, h/2 + h/4 + 5],
-    [w/4 - 18, h/2 + h/4 + 20],
-    [w/4, h/2 + h/4 + 10],
-    [w/4 + 18, h/2 + h/4 + 20],
-    [w/4 + 10, h/2 + h/4 + 5],
-    [w/4 + 25, h/2 + h/4 - 5],
-    [w/4 + 5, h/2 + h/4 - 5]
+    [w/4 - 4, h/2 + h/4 - 4],
+    [w/4 - 20, h/2 + h/4 - 4],
+    [w/4 - 8, h/2 + h/4 + 4],
+    [w/4 - 15, h/2 + h/4 + 17],
+    [w/4, h/2 + h/4 + 8],
+    [w/4 + 15, h/2 + h/4 + 17],
+    [w/4 + 8, h/2 + h/4 + 4],
+    [w/4 + 20, h/2 + h/4 - 4],
+    [w/4 + 4, h/2 + h/4 - 4]
   ]
 
   var star = d3.symbol().type(d3.symbolStar).size(100);
@@ -105,6 +105,9 @@
     .attr("y", 185)
     .style("fill", "darkblue")
     .style("stroke-width", 0)
+    .on("click", function(){
+      console.log("Israel")
+    })
 
   //Japan
   svg.append("rect")
@@ -114,6 +117,9 @@
     .attr("y", h/2)
     .style("stroke-width", 2)
     .style("stroke", "black")
+    .on("click", function(){
+      console.log("Japan")
+    })
 
   svg.append("circle")
     .attr("cx", w/2 + w/4)
@@ -130,6 +136,9 @@
     .attr("width", w/2)
     .attr("height", h/2)
     .style("fill", "steelblue")
+    .on("click", function(){
+      console.log("Sweeden")
+    })
     
   svg.append("line")
     .attr("x1", w/2 + 2)
@@ -150,6 +159,9 @@
     .attr("width", w/2)
     .attr("height", h/2)
     .style("fill", "red")
+    .on("click", function(){
+      console.log("Turkey")
+    })
 
   svg.append("circle")
     .attr("cx", w/4 - 80)
