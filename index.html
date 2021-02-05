@@ -109,7 +109,7 @@
     .attr("y", 0)
     .attr("width", w/2)
     .attr("height", h/2)
-    .style("fill", "lightblue")
+    .style("fill", "aqua")
     
   svg.append("line")
     .attr("x1", w/2 + 2)
@@ -123,9 +123,27 @@
     .attr("y1", 2)
     .attr("y2", h/2 - 2)
 
-  // Add an SVG
-  // Add Rectangles
-  // Add Circles
-  // Add Lines
-  // Add Polygons
+  //Turkey
+  svg.append("rect")
+    .attr("x", 0)
+    .attr("y", w/2)
+    .attr("width", w/2)
+    .attr("height", h/2)
+    .style("fill", "red")
+
+  svg.append("circle")
+    .attr("cx", w/4)
+    .attr("cy", h/2 + h/4)
+    .attr("r", 50)
+    .style("fill", "white")
+    .style("stroke", "white")
+
+  svg.append("circle")
+    .attr("cx", w/4 + 25)
+    .attr("cy", h/2 + h/4)
+    .attr("r", 25)
+    .style("fill", "red")
+    .style("stroke", "red")
+
+    
 </script>
