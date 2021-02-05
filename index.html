@@ -18,6 +18,11 @@
     stroke: rgb(0, 255, 200);
     stroke-width: 2.5px;
   }
+
+  line {
+    stroke: lightgreen;
+    stroke-width: 10px;
+  }
 </style>
 
 <script>
@@ -38,9 +43,15 @@
     .attr("height", h)
    
   svg.append("circle")
-    .attr("cx", 40)
-    .attr("cy", 40)
-    .attr("r", 50)  
+    .attr("cx", w/2)
+    .attr("cy", h/2)
+    .attr("r", 50)
+
+  svg.append("line")
+    .attr("x1", 0)
+    .attr("x2", w)
+    .attr("y1", 0)
+    .attr("y2", h)
   // Add an SVG
   // Add Rectangles
   // Add Circles
