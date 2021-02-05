@@ -47,6 +47,7 @@
   svg.append("rect")
     .attr("width", w)
     .attr("height", h)
+    .attr("stroke-width", 4)
   
   svg.append("rect")
     .attr("width", w/2)
@@ -67,14 +68,8 @@
     .style("fill", "red")
     .style("stroke", "red")
 
-  svg.append("line")
-    .attr("x1", 0)
-    .attr("x2", w)
-    .attr("y1", 0)
-    .attr("y2", h)
-
   svg.append("polygon")
-    .attr("points", points1)
+    .attr("points", "50,50 25,25 75,75")
     .attr("fill", "none")
     .attr("stroke", "blue")
     .attr("stroke-width", 4)
