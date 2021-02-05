@@ -52,6 +52,8 @@
     [w/3 - 35, h/6 + 20]
   ]
 
+  var star = d3.symbol().type(d3.symbolStar).size(25);
+
   var svg = d3.select("body").append("svg")
     .attr("width", w)
     .attr("height", h);
@@ -126,7 +128,7 @@
   //Turkey
   svg.append("rect")
     .attr("x", 0)
-    .attr("y", w/2)
+    .attr("y", h/2)
     .attr("width", w/2)
     .attr("height", h/2)
     .style("fill", "red")
@@ -145,5 +147,8 @@
     .style("fill", "red")
     .style("stroke", "red")
 
-    
+  svg.append("star")
+    .attr("d", star)
+    .attr("fill", "purple")
+
 </script>
