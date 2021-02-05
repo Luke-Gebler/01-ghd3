@@ -57,6 +57,19 @@
     [w/3 - 35, h/6 + 20]
   ]
 
+  var starPoints = [
+    [w/4, h/2 + h/4 - 20],
+    [w/4 - 5, h/2 + h/4 - 5],
+    [w/4 - 25, h/2 + h/4 - 5],
+    [w/4 - 10, h/2 + h/4 + 5],
+    [w/4 - 18, h/2 + h/4 + 20],
+    [w/4, h/2 + h/4 + 10],
+    [w/4 + 18, h/2 + h/4 + 20],
+    [w/4 + 10, h/2 + h/4 + 5],
+    [w/4 + 25, h/2 + h/4 - 5],
+    [w/4 + 5, h/2 + h/4 - 5]
+  ]
+
   var star = d3.symbol().type(d3.symbolStar).size(100);
 
   var svg = d3.select("body").append("svg")
@@ -152,36 +165,9 @@
     .style("fill", "red")
     .style("stroke", "red")
 
-  d3.select("#star_svg")
-    .append("svg:polygon")
-    .attr("id", "star_1")
-    .attr("visibility", "visible")
-    .attr("points", CalculateStarPoints(w/4, h/2 + h/4, 5, 10, 5))
+  svg.append("polygon")
+    .attr("points", starPoints)
+    .style("fill", "white")
+    .style("stroke-width", 0)
 
-
-
-function CalculateStarPoints(centerX, centerY, arms, outerRadius, innerRadius)
-{
-   var results = "";
-
-   var angle = Math.PI / arms;
-
-   for (var i = 0; i < 2 * arms; i++)
-   {
-      var r = (i & 1) == 0 ? outerRadius : innerRadius;
-      
-      var currX = centerX + Math.cos(i * angle) * r;
-      var currY = centerY + Math.sin(i * angle) * r;
-
-      if (i == 0)
-      {
-         results = currX + "," + currY;
-      }
-      else
-      {
-         results += ", " + currX + "," + currY;
-      }
-   }
-   return results;
-}
 </script>
