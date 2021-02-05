@@ -130,7 +130,8 @@
     .style("stroke-width", 2)
     .style("stroke", "black")
     .on("click", function(){
-      console.log("Japan")
+      d3.select(this).style("fill", "magenta");
+      console.log("Japan");
     })
 
   svg.append("circle")
@@ -140,7 +141,7 @@
     .style("fill", "red")
     .style("stroke", "red")
     .on("click", function(){
-      console.log("Japan")
+      console.log("Japan");
     })
     
   //Sweeden
@@ -151,7 +152,7 @@
     .attr("height", h/2)
     .style("fill", "steelblue")
     .on("click", function(){
-      console.log("Sweeden")
+      console.log("Sweeden");
     })
     
   svg.append("line")
@@ -160,7 +161,7 @@
     .attr("y1", h/4)
     .attr("y2", h/4)
     .on("click", function(){
-      console.log("Sweeden")
+      console.log("Sweeden");
     })
 
   svg.append("line")
@@ -169,7 +170,9 @@
     .attr("y1", 2)
     .attr("y2", h/2 - 2)
     .on("click", function(){
-      console.log("Sweeden")
+      d3.select(this).attr("x1", w - 160);
+      d3.select(this).attr("x2", w - 160);
+      console.log("Sweeden");
     })
 
   //Turkey
@@ -180,7 +183,7 @@
     .attr("height", h/2)
     .style("fill", "red")
     .on("click", function(){
-      console.log("Turkey")
+      console.log("Turkey");
     })
 
   svg.append("circle")
@@ -190,7 +193,7 @@
     .style("fill", "white")
     .style("stroke", "white")
     .on("click", function(){
-      console.log("Turkey")
+      console.log("Turkey");
     })
 
   svg.append("circle")
@@ -200,7 +203,7 @@
     .style("fill", "red")
     .style("stroke", "red")
     .on("click", function(){
-      console.log("Turkey")
+      console.log("Turkey");
     })
 
   svg.append("polygon")
@@ -208,7 +211,7 @@
     .style("fill", "white")
     .style("stroke-width", 0)
     .on("click", function(){
-      console.log("Turkey")
+      console.log("Turkey");
     })
 
 </script>
